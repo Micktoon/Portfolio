@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*
+ol, ul {
+	list-style: none;
+}
+*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************ GENERAL **********************/
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%; 
+    font-family: "museo-sans",sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: auto; /* pour ie */
+    height: auto; /* pour ie */
+    -ms-interpolation-mode: bicubic; /* lissage pour IE */
+}
+
+.contener {
+    margin: 2% auto;
+    width: 90%;
+}
+
+
+/********************* HEADER ********************/
+
+header nav {
+    display: flex;
+    align-items: center;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: .5s all;
+}
+
+header a:hover {
+    color: #44ade0;
+}
+
+header ul { 
+    margin-left: auto;
+    width: 26%;
+    
+}
+
+header li {
+    display: inline;
+    margin-left: 20%;
+}
+
+header li:first-of-type {
+    margin-left: 0;
+}
+
+
+/********************* PAGE D'OUVERTURE - HOME ********************/
+
+#video_background{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+
+/********************* PRESENTATION DES PROJETS - HOME ********************/
+
+.contener_projet {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    margin-top: 46.23%
+} 
+
+.projet_home {
+    position: relative;
+    flex: auto;
+}
+
+.projet_home img {
+    min-width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.1em;
+    border: 2px solid white;
+    padding: 10% 8% 2% 2%;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    transition: padding .5s cubic-bezier(.25,.1,.25,1);
+}
+
+figcaption:hover {
+    padding: 10% 30% 2% 2%;
+    background-color: #F1FA04;
+    color: black;
+    border: 2px solid #F1FA04;
+}
+
+
+/********************* MEDIA QUERIES ********************/
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
