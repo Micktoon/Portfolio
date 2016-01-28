@@ -73,7 +73,7 @@ img {
 }
 
 
-/********************* HEADER ********************/
+/********************* HEADER + NAV ********************/
 
 header nav {
     display: flex;
@@ -90,7 +90,7 @@ header a {
 }
 
 header a:hover {
-    color: #44ade0;
+    color: yellow;
 }
 
 header ul { 
@@ -108,13 +108,46 @@ header li:first-of-type {
     margin-left: 0;
 }
 
+/********************* ELEMENTS SUPLEMENTAIRES PRESENTATION SUR MOI ********************/
+
+.contener_presentation {
+    color: white;
+    width: 20%;
+    margin-left: 13.7%;
+    margin-top: 25%;
+}
+
+.presentation_home {
+    line-height: 1.5em;
+    font-size: .8em;
+}
+
+.sociaux li {
+    display: inline;
+}
+
+.fa {
+    color: white;
+    justify-content: center;
+    margin-top: 15%;
+    margin-left: 5%;
+    transition: 1s all;
+}
+
+.fa:hover {
+    color: yellow;
+}
+
+.fa-linkedin {
+    margin-left: 0;
+}
 
 /********************* PAGE D'OUVERTURE - HOME ********************/
 
 #video_background{
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -132,7 +165,7 @@ header li:first-of-type {
     flex-flow: row wrap;
     -webkit-justify-content: center;
     -webkit-align-items: center;
-    margin-top: 46.23%
+    margin-top: 12%
 } 
 
 .projet_home {

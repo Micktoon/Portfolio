@@ -19,6 +19,9 @@
 		<!--WEBFONT MUSEO SANS TYPEKIT-->
 		<script src="https://use.typekit.net/dbw8ndp.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+        <!--WEBFONT ICN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		
 	</head>
 
@@ -50,7 +53,14 @@
              </nav>
         </header> <!--FIN DU HEADER-->
         
-        
+        <aside class="contener_presentation">
+            <p class="presentation_home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cum temporibus, odit, omnis asperiores, voluptas assumenda velit magnam laboriosam nihil animi saepe.</p>
+            <ul class="sociaux">
+                <a href="https://www.linkedin.com/in/mickaelfrigout?trk=hp-identity-name" target="_blank"><li class="in"><i class="fa fa-linkedin"></i></li></a>
+                <a href="https://www.behance.net/mickaelf" target="_blank"><li class="be"><i class="fa fa-behance"></i></li></a>
+                <a href="https://vimeo.com/user16708819" target="_blank"><li class="vimeo"><i class="fa fa-vimeo"></i></li></a>
+            </ul>
+        </aside> <!--FIN DU BLOC DE PRESENTATION SUR MOI AVEC MES SOCIAUX-->
         
         <!--HOME DEBUT DU SITE WEB-->
         
@@ -106,12 +116,17 @@
 		</section>
 		
 		
-		<!--
+		
 		<script>
 			$(document).ready(function() {
-			
+                $('a[href^="#projets"]').click(function(){  
+                    var id = $(this).attr("href");
+                    var offset = $(id).offset().top 
+                    $('html, body').animate({scrollTop: offset}, 'slow'); 
+                    return false;  
+                }); 
 			});
 		</script>
-		-->
+		
 	</body>
 </html>
