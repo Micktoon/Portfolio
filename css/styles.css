@@ -85,12 +85,12 @@ header a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     transition: .5s all;
 }
 
 header a:hover {
-    color: yellow;
+    color: red;
 }
 
 header ul { 
@@ -108,6 +108,14 @@ header li:first-of-type {
     margin-left: 0;
 }
 
+#interne a {
+    color: black;
+}
+
+#interne a:hover {
+    color: red;
+}
+
 /********************* ELEMENTS SUPLEMENTAIRES PRESENTATION SUR MOI ********************/
 
 .contener_presentation {
@@ -118,8 +126,8 @@ header li:first-of-type {
 }
 
 .presentation_home {
-    line-height: 1.5em;
-    font-size: .8em;
+    line-height: 2em;
+    font-size: 0.85em;
 }
 
 .sociaux li {
@@ -131,11 +139,11 @@ header li:first-of-type {
     justify-content: center;
     margin-top: 15%;
     margin-left: 5%;
-    transition: 1s all;
+    transition: .5s all;
 }
 
 .fa:hover {
-    color: yellow;
+    color: red;
 }
 
 .fa-linkedin {
